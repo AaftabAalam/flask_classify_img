@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to image classification</h1>
+            <form method="POST" action="/predict" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <br><br>
+                <input type="submit" value="upload">
+            </form>
+        </div>
+    </body>
+</html>
